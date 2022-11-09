@@ -20,10 +20,14 @@ font-family: 'Mulish', sans-serif;
     box-sizing: border-box;
 }
 
+body
+{
+    font-family: var(--inter-font), var(--mulish-font), sans-serif;
+}
+
 img
 {
     display: block;
-
     user-select: none;
 }
 
@@ -51,7 +55,7 @@ button
 
 }
 
-#page-header
+.header
 {
     margin: 30px 0 52px;
     width: 100%;
@@ -61,7 +65,7 @@ button
     left: 0;
 }
 
-#page-header .container-1110
+.header .container-1110
 {
     display: flex;
     flex-flow: row nowrap;
