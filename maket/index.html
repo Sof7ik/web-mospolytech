@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MDA Shipping</title>
+    <title>Main page - MDA Shipping</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/maket/style.css">
     <script src="/maket/script.js"></script>
@@ -13,8 +14,10 @@
 <body>
     <header class="header">
         <div class="container-1110">
-            <a href="/" class="logo">
-                <img src="/maket/assets/img/logo.svg" alt="MDA Boating Logotype">
+            <a href="/" class="header__logo-link">
+                <img src="/maket/assets/img/logo.svg"
+                     alt="MDA Boating Logotype"
+                     class="header__logo-image">
             </a>
 
             <button class="header__mobile-menu-opener">
@@ -22,22 +25,25 @@
             </button>
         </div>
     </header>
+
     <main>
-        <div class="container-1110">
-            <section class="boat-loading">
+        <section class="boat-loading">
+            <div class="container-1110">
                 <div class="boat-loading__left">
                     <h1 class="boat-loading__title heading-1">Boat Loading</h1>
                     <p class="boat-loading__description">
                         Using different container size options, we take care of the boats by securing it safely in the container.
                     </p>
 
-                    <div class="boat-loading__grid-list-wrapper">
+                    <div class="boat-loading__grid-list-wrapper boat-loading__grid-list-wrapper--desktop">
                         <h2 class="heading-2 boat-loading-list__title">We load all types of boats</h2>
 
                         <ul class="boat-loading__grid-list">
                             <li class="boat-loading__grid-item">
                                 <div class="boat-loading__grid-item-icon-wrapper">
-                                    <img src="/maket/assets/img/boats/fishing-boat.png" alt="fishing boat">
+                                    <img src="/maket/assets/img/boats/fishing-boat.png"
+                                         alt="fishing boat"
+                                         class="boat-loading-item__icon">
                                 </div>
 
                                 <p class="boat-loading__grid-item__name">
@@ -47,17 +53,21 @@
 
                             <li class="boat-loading__grid-item">
                                 <div class="boat-loading__grid-item-icon-wrapper">
-                                    <img src="/maket/assets/img/boats/jet-skies.png" alt="Jet sky">
+                                    <img src="/maket/assets/img/boats/jet-skies.png"
+                                         alt="Jet sky"
+                                         class="boat-loading-item__icon">
                                 </div>
 
                                 <p class="boat-loading__grid-item__name">
-                                   Jet skies
+                                    Jet skies
                                 </p>
                             </li>
 
                             <li class="boat-loading__grid-item">
                                 <div class="boat-loading__grid-item-icon-wrapper">
-                                    <img src="/maket/assets/img/boats/sport-boat.png" alt="Sport boat">
+                                    <img src="/maket/assets/img/boats/sport-boat.png"
+                                         alt="Sport boat"
+                                         class="boat-loading-item__icon">
                                 </div>
 
                                 <p class="boat-loading__grid-item__name">
@@ -67,7 +77,9 @@
 
                             <li class="boat-loading__grid-item">
                                 <div class="boat-loading__grid-item-icon-wrapper">
-                                    <img src="/maket/assets/img/boats/pontoon-boat.png" alt="Pontoon boat">
+                                    <img src="/maket/assets/img/boats/pontoon-boat.png"
+                                         alt="Pontoon boat"
+                                         class="boat-loading-item__icon">
                                 </div>
 
                                 <p class="boat-loading__grid-item__name">
@@ -77,7 +89,9 @@
 
                             <li class="boat-loading__grid-item">
                                 <div class="boat-loading__grid-item-icon-wrapper">
-                                    <img src="/maket/assets/img/boats/sail-boat.png" alt="Sail boat">
+                                    <img src="/maket/assets/img/boats/sail-boat.png"
+                                         alt="Sail boat"
+                                         class="boat-loading-item__icon">
                                 </div>
 
                                 <p class="boat-loading__grid-item__name">
@@ -87,7 +101,9 @@
 
                             <li class="boat-loading__grid-item">
                                 <div class="boat-loading__grid-item-icon-wrapper">
-                                    <img src="/maket/assets/img/boats/yacht.png" alt="Yacht">
+                                    <img src="/maket/assets/img/boats/yacht.png"
+                                         alt="Yacht"
+                                         class="boat-loading-item__icon">
                                 </div>
 
                                 <p class="boat-loading__grid-item__name">
@@ -99,14 +115,101 @@
                 </div>
 
                 <div class="boat-loading__right">
-                    <img src="/maket/assets/img/boat-with-container.png" alt="Boat near container">
-                </div>
-            </section>
+                    <img src="/maket/assets/img/boat-with-container.png"
+                         alt="Boat near container"
+                         class="boat-loading__image">
 
+                    <div class="boat-loading__grid-list-wrapper boat-loading__grid-list-wrapper--mobile">
+                        <h2 class="heading-2 boat-loading-list__title">We load all types of boats</h2>
+
+                        <ul class="boat-loading__grid-list">
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/maket/assets/img/boats/fishing-boat.png"
+                                         alt="fishing boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Fishing boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/maket/assets/img/boats/jet-skies.png"
+                                         alt="Jet sky"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Jet skies
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/maket/assets/img/boats/sport-boat.png"
+                                         alt="Sport boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Sport boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/maket/assets/img/boats/pontoon-boat.png"
+                                         alt="Pontoon boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Pontoon boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/maket/assets/img/boats/sail-boat.png"
+                                         alt="Sail boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Sail boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/maket/assets/img/boats/yacht.png"
+                                         alt="Yacht"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Yachts
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-1110">
             <section class="page-section container-shipment">
-                <h2 class="heading-2 container-shipment__title">
-                    Container shipment
-                </h2>
+                <div class="container-shipment__title-wrapper">
+                    <h2 class="heading-2 container-shipment__title">
+                        Container shipment
+                    </h2>
+
+                    <hr class="container-shipment__line">
+                </div>
+
 
                 <div class="container-shipment__inner-wrapper">
                     <div class="container-shipment__side">
@@ -114,16 +217,20 @@
                             Boats or yachts are often transported in containers as a better alternative for cost effectiveness and security reasons. We can offer flip loading for bigger boats that don’t exceed 102 inches in beam width.
                         </p>
                     </div>
-                    <div class="container-shipment__side">
-                        <img src="/maket/assets/img/container-shipment.png" alt="A boat in container">
-                    </div>
+
+                    <img src="/maket/assets/img/container-shipment.png"
+                         alt="A boat in container"
+                         class="boat-shipment__image">
                 </div>
             </section>
 
             <section class="page-section container-shipment">
-                <h2 class="heading-2 container-shipment__title">
-                    Flat rack loading
-                </h2>
+                <div class="container-shipment__title-wrapper">
+                    <h2 class="heading-2 container-shipment__title">
+                        Flat rack loading
+                    </h2>
+                    <hr class="container-shipment__line">
+                </div>
 
                 <div class="container-shipment__inner-wrapper">
                     <div class="container-shipment__side">
@@ -131,16 +238,20 @@
                             Boats are transported on the platform and safely lashed. All Flat Rack Shipment are passing NCB Inspection. Best option for bigger boat that don’t exceed 36 feet in length.
                         </p>
                     </div>
-                    <div class="container-shipment__side">
-                        <img src="/maket/assets/img/flat-track.png" alt="A boat in container">
-                    </div>
+
+                    <img src="/maket/assets/img/flat-track.png"
+                         alt="A boat in container"
+                         class="boat-shipment__image">
                 </div>
             </section>
 
             <section class="page-section container-shipment">
-                <h2 class="heading-2 container-shipment__title">
-                    On deck cargo
-                </h2>
+                <div class="container-shipment__title-wrapper">
+                    <h2 class="heading-2 container-shipment__title">
+                        On deck cargo
+                    </h2>
+                    <hr class="container-shipment__line">
+                </div>
 
                 <div class="container-shipment__inner-wrapper">
                     <div class="container-shipment__side">
@@ -148,9 +259,10 @@
                             Boats or yachts are loaded/ unloaded directly from the sea or from the shore. Yachts Ships or cranes in cradles are utilized to load bigger boats or yachts.
                         </p>
                     </div>
-                    <div class="container-shipment__side">
-                        <img src="/maket/assets/img/deck-cargo.png" alt="Deck cargo">
-                    </div>
+
+                    <img src="/maket/assets/img/deck-cargo.png"
+                         alt="Deck cargo"
+                         class="boat-shipment__image">
                 </div>
             </section>
 
@@ -159,34 +271,36 @@
                     Optional services
                 </h2>
 
-                <div class="optional-services__grid-list">
-                    <div class="optional-services__grid-item">
-                        <p class="optional-services__grid-item__text">Cargo insurance</p>
-                    </div>
+                <ul class="optional-services__grid-list">
+                    <li class="optional-services__grid-item">
+                        Cargo insurance
+                    </li>
 
-                    <div class="optional-services__grid-item">
-                        <p class="optional-services__grid-item__text">Long term cargo storage</p>
-                    </div>
+                    <li class="optional-services__grid-item">
+                        Long term cargo storage
+                    </li>
 
-                    <div class="optional-services__grid-item">
-                        <p class="optional-services__grid-item__text">Detailing and cleaning</p>
-                    </div>
+                    <li class="optional-services__grid-item">
+                        Detailing and cleaning
+                    </li>
 
-                    <div class="optional-services__grid-item">
-                        <p class="optional-services__grid-item__text">Additional report and inspection</p>
-                    </div>
+                    <li class="optional-services__grid-item">
+                        Additional report and inspection
+                    </li>
 
-                    <div class="optional-services__grid-item">
-                        <p class="optional-services__grid-item__text">Plastic film coverage of broken part</p>
-                    </div>
+                    <li class="optional-services__grid-item">
+                        Plastic film coverage of broken part
+                    </li>
 
-                    <div class="optional-services__grid-item">
-                        <p class="optional-services__grid-item__text">Moisture bags to avoid mold</p>
-                    </div>
-                </div>
+                    <li class="optional-services__grid-item">
+                        Moisture bags to avoid mold
+                    </li>
+                </ul>
             </section>
+        </div>
 
-            <section class="page-section contact-us">
+        <section class="page-section contact-us">
+            <div class="container-1110">
                 <div class="contact-us__side">
                     <h2 class="heading-2 contact-us__title">Contact us</h2>
 
@@ -196,97 +310,92 @@
 
                     <form action=""
                           method="POST"
-                          class="contact-us__form">
-                        <div class="form-input-wrapper">
-                            <label for="name-input">Name</label>
+                          class="form contact-us__form">
+                        <label class="form__label-input no-label">
+                            <span>Name</span>
+
                             <input type="text"
                                    name="name"
-                                    placeholder="Name"
-                                   autocomplete="name"
-                                    id="name-input">
-                        </div>
+                                   placeholder="Name"
+                                   autocomplete="name">
+                        </label>
 
-                        <div class="form-input-wrapper">
-                            <label for="phone-input">Phone</label>
+                        <label class="form__label-input no-label">
+                            <span>Phone</span>
+
                             <input type="tel"
                                    inputmode="tel"
                                    name="phone"
                                    placeholder="Phone Number"
                                    autocomplete="tel"
                                    id="phone-input">
-                        </div>
+                        </label>
 
-                        <div class="form-input-wrapper">
-                            <label for="message-input">Message</label>
-                            <textarea
-                                   placeholder="Message"
-                                   id="message-input">
-                            </textarea>
-                        </div>
+                        <label class="form__label-input no-label">
+                            <span>Message</span>
+                            <textarea placeholder="Message"></textarea>
+                        </label>
 
-                        <div class="form-input-wrapper checkbox">
-                            <label for="agreement-input">
-                                I agree with the <a href="/policy">Privacy policy</a>
-                            </label>
-                            <input type="checkbox"
-                                   required
-                                   id="agreement-input">
-                        </div>
+                        <label class="form__label-input checkbox">
+                            <span>I agree with the <a href="/policy">Privacy policy</a></span>
+                            <input type="checkbox" required>
+                        </label>
 
                         <input type="submit"
                                value="Send a message"
-                               class="form-input__submit">
+                               class="form-input__submit"
+                                disabled>
                     </form>
                 </div>
-                <div class="contact-us__side">
-                    <img src="/maket/assets/img/contact-us-image.png" alt="Cars in container" class="contact-us__image">
-                </div>
-            </section>
-        </div>
+                <img src="/maket/assets/img/contact-us-image.png" alt="Cars in container" class="contact-us__image">
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__up">
-            <a href="/" class="footer__logo">
-                <img src="/maket/assets/img/logo.svg"
-                     alt="MDA Shipping logotype"
-                     class="footer__logo-image">
-            </a>
+        <div class="container-1110">
+            <div class="footer__up">
+                <a href="/" class="footer__logo">
+                    <img src="/maket/assets/img/logo--white.svg"
+                         alt="MDA Shipping logotype"
+                         class="footer__logo-image">
+                </a>
 
-            <div class="footer-up__menu-social">
-                <nav class="footer-menu">
-                    <ul class="footer-menu__list">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/contacts">Contacts</a></li>
-                    </ul>
-                </nav>
+                <div class="footer-up__menu-social">
+                    <nav class="footer-menu">
+                        <ul class="footer-menu__list">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
 
-                <div class="footer-social-wrapper">
-                    <ul class="footer-social">
-                        <li>
-                            <a href="https://whatsapp.com">
-                                <img src="/maket/assets/img/icons/whatsapp.svg" alt="WhatsApp logotype">
-                            </a>
-                        </li>
+                    <div class="footer-social-wrapper">
+                        <ul class="footer-social">
+                            <li>
+                                <a href="https://whatsapp.com">
+                                    <img src="/maket/assets/img/icons/whatsapp.svg" alt="WhatsApp logotype">
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="https://t.me">
-                                <img src="/maket/assets/img/icons/telegram.svg" alt="Telegram logotype">
-                            </a>
-                        </li>
-                    </ul>
+                            <li>
+                                <a href="https://t.me">
+                                    <img src="/maket/assets/img/icons/telegram.svg" alt="Telegram logotype">
+                                </a>
+                            </li>
+                        </ul>
 
-                    <a href="mailto:info@cargo.us">info@cargo.us</a>
-                    <a href="tel:+1 912 000 0000">+1 912 000 0000</a>
+                        <a href="mailto:info@cargo.us">info@cargo.us</a>
+                        <a href="tel:+1 912 000 0000">+1 912 000 0000</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="footer__copyright">
-            <p class="footer-copyright__text">
-                Copyright &copy; 2022 Cargo. All rights reserved;
-            </p>
+            <div class="footer__copyright">
+                <p class="footer-copyright__text">
+                    Copyright &copy; 2022 Cargo. All rights reserved;
+                </p>
+            </div>
         </div>
     </footer>
 </body>
