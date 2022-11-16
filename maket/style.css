@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Mulish:wght@600;700&display=swap');
+@import url("/maket/assets/styles/normalize.css");
 
 /*
 font-family: 'Inter', sans-serif;
@@ -27,7 +28,7 @@ font-family: 'Mulish', sans-serif;
 
 html
 {
-    font-size: 62.5%; /* === 10px */
+    font-size: 62.5%; /* === 10px */ 
 }
 
 body
@@ -39,7 +40,7 @@ body
     background-color: var(--page-bg-color);
 }
 
-html, body
+html
 {
     overflow-x: hidden;
 }
@@ -97,6 +98,11 @@ input, textarea
     margin: -1px;
 }
 
+#contact-us__privacy
+{
+    display: none;
+}
+
 .form__label-input.checkbox
 {
     padding-left: calc(20px + 24px);
@@ -113,6 +119,29 @@ input, textarea
     height: 24px;
 
     border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.form__label-input.checkbox::after
+{
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: -2px;
+    width: 22px;
+    height: 22px;
+
+    background-image: url("/maket/assets/img/icons/check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0;
+
+    transition: .3s;
+}
+
+#contact-us__privacy:checked + .form__label-input.checkbox::after
+{
+    opacity: 1;
 }
 
 .form__label-input.checkbox input
@@ -149,6 +178,8 @@ input, textarea
 .form__label-input input,
 .form__label-input textarea
 {
+    font-family: var(--inter-font), var(--mulish-font), sans-serif;
+
     background-color: #5591FF;
     border-radius: 10px;
     padding: 20px 10px 20px 29px;
@@ -157,6 +188,12 @@ input, textarea
     line-height: 2rem;
 
     color: #fff;
+}
+
+.form__label-input input::placeholder,
+.form__label-input textarea::placeholder
+{
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /*.form__label-input input:placeholder-shown,*/
@@ -385,6 +422,14 @@ input, textarea
     background-color: var(---blue-color);
 
     margin-top: 2.4rem;
+}
+
+.container-shipment__desc
+{
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+
+    color: var(--dark-blue-color);
 }
 
 .boat-shipment__desc
