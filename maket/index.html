@@ -8,17 +8,50 @@
     <title>Main page - MDA Shipping</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Mulish&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/maket/assets/styles/normalize.css">
     <link rel="stylesheet" href="/maket/assets/styles/style.css">
     <script src="/maket/script.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container-1110">
-            <a href="/" class="header__logo-link">
-                <img src="/maket/assets/img/logo.svg"
-                     alt="MDA Boating Logotype"
-                     class="header__logo-image">
-            </a>
+            <div class="header__desktop-left">
+                <a href="/" class="header__logo-link">
+                    <img src="/maket/assets/img/logo.svg"
+                         alt="MDA Boating Logotype"
+                         class="header__logo-image">
+                </a>
+
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="/maket/">Home</a></li>
+                        <li class="active"><a href="/maket/">Services</a></li>
+                        <li><a href="/maket/">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <ul class="header__social-links">
+                <li class="header__social-link-item">
+                    <a href="https://t.me" target="_blank" class="header__social-link">
+                        <img src="/maket/assets/img/icons/telegram.svg"
+                             alt="Логотип Telegram"
+                            class="header__social-link-icon">
+                    </a>
+                </li>
+                
+                <li class="header__social-link-item">
+                    <a href="https://whatsapp.com" target="_blank" class="header__social-link">
+                        <img src="/maket/assets/img/icons/whatsapp.svg"
+                             alt="Логотип WhatsApp"
+                            class="header__social-link-icon">
+                    </a>
+                </li>
+            </ul>
 
             <button class="header__mobile-menu-opener">
                 <img src="/maket/assets/img/icons/mobile-opener.svg" alt="4 circles">
@@ -212,11 +245,9 @@
 
 
                 <div class="container-shipment__inner-wrapper">
-                    <div class="container-shipment__side">
-                        <p class="container-shipment__desc">
-                            Boats or yachts are often transported in containers as a better alternative for cost effectiveness and security reasons. We can offer flip loading for bigger boats that don’t exceed 102 inches in beam width.
-                        </p>
-                    </div>
+                    <p class="container-shipment__desc">
+                        Boats or yachts are often transported in containers as a better alternative for cost effectiveness and security reasons. We can offer flip loading for bigger boats that don’t exceed 102 inches in beam width.
+                    </p>
 
                     <img src="/maket/assets/img/container-shipment.png"
                          alt="A boat in container"
@@ -233,11 +264,9 @@
                 </div>
 
                 <div class="container-shipment__inner-wrapper">
-                    <div class="container-shipment__side">
-                        <p class="container-shipment__desc">
-                            Boats are transported on the platform and safely lashed. All Flat Rack Shipment are passing NCB Inspection. Best option for bigger boat that don’t exceed 36 feet in length.
-                        </p>
-                    </div>
+                    <p class="container-shipment__desc">
+                        Boats are transported on the platform and safely lashed. All Flat Rack Shipment are passing NCB Inspection. Best option for bigger boat that don’t exceed 36 feet in length.
+                    </p>
 
                     <img src="/maket/assets/img/flat-track.png"
                          alt="A boat in container"
@@ -254,11 +283,9 @@
                 </div>
 
                 <div class="container-shipment__inner-wrapper">
-                    <div class="container-shipment__side">
-                        <p class="container-shipment__desc">
-                            Boats or yachts are loaded/ unloaded directly from the sea or from the shore. Yachts Ships or cranes in cradles are utilized to load bigger boats or yachts.
-                        </p>
-                    </div>
+                    <p class="container-shipment__desc">
+                        Boats or yachts are loaded/ unloaded directly from the sea or from the shore. Yachts Ships or cranes in cradles are utilized to load bigger boats or yachts.
+                    </p>
 
                     <img src="/maket/assets/img/deck-cargo.png"
                          alt="Deck cargo"
@@ -398,5 +425,39 @@
             </div>
         </div>
     </footer>
+
+    <div class="mobile-menu-wrapper">
+        <div class="page-darkener"></div>
+
+        <div class="mobile-menu__list-social-wrapper">
+            <ul class="mobile-menu__list">
+                <li><a href="/maket">Home</a></li>
+                <li><a href="/maket">Services</a></li>
+                <li><a href="/maket">Contacts</a></li>
+            </ul>
+
+            <ul class="mobile-menu__social-list">
+                <li class="mobile-menu__social-item">
+                    <a href="https://t.me"
+                       target="_blank"
+                       class="mobile-menu__social-item-link">
+                        <img src="/maket/assets/img/icons/telegram.svg"
+                             alt="Логотип Telegram"
+                            class="mobile-menu__social-item-icon">
+                    </a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a href="https://whatsapp.com"
+                       target="_blank"
+                       class="mobile-menu__social-item-link">
+                        <img src="/maket/assets/img/icons/whatsapp.svg"
+                             alt="Логотип WhatsApp"
+                             class="mobile-menu__social-item-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
 </body>
 </html>
