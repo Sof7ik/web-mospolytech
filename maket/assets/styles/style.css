@@ -1111,6 +1111,15 @@ input, textarea
     height: calc(100vh - 82px);
 
     padding-top: 82px;
+
+    pointer-events: none;
+}
+@media screen and (max-width: 768px)
+{
+    .mobile-menu-wrapper.opened
+    {
+        pointer-events: all;
+    }
 }
 
 .page-darkener
