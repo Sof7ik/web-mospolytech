@@ -224,6 +224,10 @@ font-family: 'Mulish', sans-serif;
     padding: 20px 25px;
 
     min-height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boat-loading-item__icon
