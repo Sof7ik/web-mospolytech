@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+
+    <link rel="stylesheet" href="/maket/assets/styles/normalize.css">
+
+    <link rel="stylesheet" href="/maket/assets/styles/header.css">
+    <link rel="stylesheet" href="/maket/assets/styles/footer.css">
+    <script src="/maket/assets/js/mobile-menu.js" async></script>
+
+  <link rel="stylesheet" href="/maket/form/form-page.css">
+</head>
+<body>
+<header class="header">
+    <div class="container-1110">
+        <div class="header__desktop-left">
+            <a href="/" class="header__logo-link">
+                <img src="/maket/assets/img/logo.svg"
+                     alt="MDA Boating Logotype"
+                     class="header__logo-image">
+            </a>
+
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="/maket/">Home</a></li>
+                    <li class="active"><a href="/maket/">Services</a></li>
+                    <li><a href="/maket/">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <ul class="header__social-links">
+            <li class="header__social-link-item">
+                <a href="https://t.me" target="_blank" class="header__social-link">
+                    <img src="/maket/assets/img/icons/telegram.svg"
+                         alt="Логотип Telegram"
+                         class="header__social-link-icon">
+                </a>
+            </li>
+
+            <li class="header__social-link-item">
+                <a href="https://whatsapp.com" target="_blank" class="header__social-link">
+                    <img src="/maket/assets/img/icons/whatsapp.svg"
+                         alt="Логотип WhatsApp"
+                         class="header__social-link-icon">
+                </a>
+            </li>
+        </ul>
+
+        <button class="header__mobile-menu-opener">
+            <img src="/maket/assets/img/icons/mobile-opener.svg" alt="4 circles">
+        </button>
+    </div>
+</header>
+
+<main>
+    <div class="container-1110">
+        <form action=""
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              class="form form__reg-page">
+
+            <fieldset class="personal-info">
+                <legend>Личная информация</legend>
+
+                <label class="form__label-input no-label">
+                    <span>Name</span>
+
+                    <input type="text"
+                           name="name"
+                           placeholder="Имя"
+                           autocomplete="name">
+                </label>
+
+                <label class="form__label-input">
+                    <span>Дата рождения</span>
+                    <input type="date"
+                           name="bdate">
+                </label>
+
+                <label class="form__label-input">
+                    <span>Пол</span>
+                    <select name="user_gender">
+                        <option value="" selected>Выберите...</option>
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                        <option value="other">Другой</option>
+                    </select>
+                </label>
+
+                <label class="form__label-input no-label">
+                    <span>Email</span>
+
+                    <input type="email"
+                           placeholder="Email"
+                           name="user_email">
+                </label>
+
+                <label class="form__label-input no-label">
+                    <span>Password</span>
+                    <input type="password" placeholder="Password"
+                           name=""
+                           id="">
+                </label>
+            </fieldset>
+
+            <fieldset class="contact-info">
+                <legend>Контакты</legend>
+
+                <label class="form__label-input no-label">
+                    <span>Phone</span>
+
+                    <input type="tel"
+                           inputmode="tel"
+                           name="phone"
+                           placeholder="Phone Number"
+                           autocomplete="tel"
+                           id="phone-input">
+                </label>
+
+                <label class="form__label-input no-label">
+                    <span>Уддоюное вре</span>
+                    <input type="password" placeholder="Password"
+                           name=""
+                           id="">
+                </label>
+            </fieldset>
+
+            <input type="submit"
+                   value="Send a message"
+                   class="form-input__submit"
+                   disabled>
+        </form>
+    </div>
+</main>
+
+
+<footer class="footer">
+    <div class="container-1110">
+        <div class="footer__up">
+            <a href="/" class="footer__logo">
+                <img src="/maket/assets/img/logo--white.svg"
+                     alt="MDA Shipping logotype"
+                     class="footer__logo-image">
+            </a>
+
+            <div class="footer-up__menu-social">
+                <nav class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-social-wrapper">
+                    <ul class="footer-social">
+                        <li>
+                            <a href="https://whatsapp.com">
+                                <img src="/maket/assets/img/icons/whatsapp.svg" alt="WhatsApp logotype">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://t.me">
+                                <img src="/maket/assets/img/icons/telegram.svg" alt="Telegram logotype">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="mailto:info@cargo.us">info@cargo.us</a>
+                    <a href="tel:+1 912 000 0000">+1 912 000 0000</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p class="footer-copyright__text">
+                Copyright &copy; 2022 Cargo. All rights reserved;
+            </p>
+        </div>
+    </div>
+</footer>
+
+<div class="mobile-menu-wrapper">
+    <div class="page-darkener"></div>
+
+    <div class="mobile-menu__list-social-wrapper">
+        <ul class="mobile-menu__list">
+            <li><a href="/maket">Home</a></li>
+            <li><a href="/maket">Services</a></li>
+            <li><a href="/maket">Contacts</a></li>
+        </ul>
+
+        <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__social-item">
+                <a href="https://t.me"
+                   target="_blank"
+                   class="mobile-menu__social-item-link">
+                    <img src="/maket/assets/img/icons/telegram.svg"
+                         alt="Логотип Telegram"
+                         class="mobile-menu__social-item-icon">
+                </a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a href="https://whatsapp.com"
+                   target="_blank"
+                   class="mobile-menu__social-item-link">
+                    <img src="/maket/assets/img/icons/whatsapp.svg"
+                         alt="Логотип WhatsApp"
+                         class="mobile-menu__social-item-icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>

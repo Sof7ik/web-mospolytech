@@ -1,0 +1,13 @@
+.form__reg-page .form__label-input input,
+.form__reg-page .form__label-input textarea
+{
+    background-color: transparent;
+    border: 1px solid var(--dark-blue-color);
+    color: var(--dark-blue-color);
+}
+
+.form__reg-page .form__label-input input::placeholder,
+.form__reg-page .form__label-input textarea::placeholder
+{
+    color: #c9c9c9;
+}

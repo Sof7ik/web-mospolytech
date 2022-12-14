@@ -1,0 +1,138 @@
+.header
+{
+    margin: 0 0 52px;
+    width: 100%;
+    padding: 20px 0 10px;
+
+    position: sticky;
+    z-index: 2;
+    top: -1px;
+    left: 0;
+
+    /*background-color: var(--page-bg-color);*/
+    background-color: #fff;
+}
+
+.header .container-1110
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__desktop-left
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__logo-image
+{
+    width: 100%;
+    max-width: 184px;
+    max-height: 53px;
+}
+
+.header__nav
+{
+    display: none;
+}
+@media screen and (min-width: 769px)
+{
+    .header__nav
+    {
+        display: block;
+    }
+}
+
+.header__nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 85px;
+}
+
+.header__nav ul li:not(:last-child)
+{
+    margin-right: 42px;
+}
+
+.header__nav ul li a
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: var(--dark-blue-color);
+
+    text-decoration: none;
+}
+
+.header__nav ul li.active a
+{
+    color: var(--blue-color);
+}
+
+.header__social-links
+{
+    list-style-type: none;
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+@media screen and (min-width: 769px)
+{
+    .header__social-links
+    {
+        display: flex;
+    }
+}
+
+.header__social-link-item
+{
+    display: block;
+}
+.header__social-links .header__social-link-item:not(:last-child)
+{
+    margin-right: 12px;
+}
+
+.header__social-link
+{
+    display: block;
+    padding: 9px;
+    background-color: var(--blue-color);
+    border-radius: 3px;
+}
+
+.header__social-link-icon
+{
+    display: block;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+
+.header__mobile-menu-opener img
+{
+    width: 31px;
+    height: 31px;
+}
+@media screen and (min-width: 769px)
+{
+    .header__mobile-menu-opener
+    {
+        display: none;
+    }
+}
