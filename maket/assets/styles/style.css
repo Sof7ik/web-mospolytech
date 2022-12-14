@@ -34,7 +34,7 @@ body
     font-weight: 400;
     text-align: left;
     line-height: 1.5rem;
-    background-color: var(--page-bg-color);
+    /*background-color: var(--page-bg-color);*/
 }
 
 html
@@ -219,6 +219,8 @@ input, textarea
 
     margin-top: 3.5rem;
 
+    box-shadow: 2px 0 10px 1px var(--dark-blue-color);
+
     transition: color .4s;
 }
 .form input[type="submit"][disabled]
@@ -280,7 +282,8 @@ input, textarea
     top: -1px;
     left: 0;
 
-    background-color: var(--page-bg-color);
+    /*background-color: var(--page-bg-color);*/
+    background-color: #fff;
 }
 
 .header .container-1110
@@ -464,11 +467,15 @@ input, textarea
     font-style: normal;
     font-weight: 600;
     font-size: 3.8rem;
-    line-height: 4.2rem;
+    line-height: 4.8rem;
 
     color: var(--dark-blue-color);
 
     margin: 0;
+
+    background-image: linear-gradient(to right, var(--dark-blue-color) 0, var(--blue-color) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .boat-loading__description
@@ -622,6 +629,8 @@ input, textarea
     border-radius: 10px;
 
     padding: 20px 25px;
+
+    min-height: 90px;
 }
 
 .boat-loading-item__icon
