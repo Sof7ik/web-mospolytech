@@ -178,6 +178,13 @@ input { /* 1 */
     overflow: visible;
 }
 
+button,
+input[type="submit"],
+input[type="reset"]
+{
+    cursor: pointer;
+}
+
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
@@ -417,18 +424,78 @@ input, textarea {
     display: block;
 }
 
+form fieldset
+{
+    border: 2px solid var(--dark-blue-color);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+form fieldset:not(:last-child)
+{
+    margin-bottom: 20px;
+}
+
+form fieldset legend
+{
+    color: var(--dark-blue-color);
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    padding: 0 10px;
+}
+form fieldset legend::selection
+{
+    background-color: var(--dark-blue-color);
+    color: #fff;
+}
+
 .form__label-input {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
 
     margin-bottom: 1.5rem;
 }
 
+.form__label-list
+{
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form__label-list .form__label-input
+{
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .form .form__label-input:last-child,
 .form .form__label-input:last-child {
     margin-bottom: 0;
+}
+
+.form__reg-page .form__label-input span
+{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.form__label-list .form__label-input span
+{
+    margin-bottom: 0;
+    border-bottom: 1px solid transparent;
+
+    transition: .4s;
 }
 
 .form__label-input.no-label span {
@@ -518,7 +585,10 @@ input, textarea {
 }
 
 .form__label-input input,
-.form__label-input textarea {
+.form__label-input textarea,
+.form__label-input select,
+[type="reset"]
+{
     font-family: var(--inter-font), var(--mulish-font), sans-serif;
 
     background-color: #5591FF;
@@ -529,6 +599,12 @@ input, textarea {
     line-height: 2rem;
 
     color: #fff;
+    width: 100%;
+    display: block;
+
+    outline: none;
+
+    transition: .4s;
 }
 
 .form__label-input textarea {
@@ -538,12 +614,40 @@ input, textarea {
     resize: vertical;
 }
 
+.form__label-list input[type="radio"]
+{
+    max-width: max-content;
+    width: 25px;
+    height: 25px;
+
+    margin-right: 15px;
+}
+.form__label-list input[type="radio"]:focus + span
+{
+    color: var(--blue-color);
+    border-bottom: 1px solid var(--blue-color);
+}
+
+.form__label-input input:focus,
+.form__label-input textarea:focus,
+.form__label-input select:focus
+{
+    border: 1px solid var(--blue-color);
+}
+
 .form__label-input input::placeholder,
 .form__label-input textarea::placeholder {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.form input[type="submit"] {
+.form [type="submit"],
+.form [type="reset"]
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
     background-color: #F0F0FA;
     border-radius: 10px;
 
@@ -558,13 +662,67 @@ input, textarea {
 
     margin-top: 3.5rem;
 
-    box-shadow: 2px 0 10px 1px var(--dark-blue-color);
+    box-shadow: 2px 0 10px 1px var(--blue-color);
 
-    transition: color .4s;
+    transition: .4s;
+}
+.form [type="submit"]:active,
+.form [type="reset"]:active
+{
+    transform: scale(0.95);
 }
 
-.form input[type="submit"][disabled] {
+.form [type="submit"][disabled],
+.form [type="reset"][disabled]
+{
     color: #8C8C8C;
+}
+@media screen and (hover: hover)
+{
+    .form [type="submit"]:hover,
+    .form [type="reset"]:hover
+    {
+        color: #fff;
+        background-color: var(--blue-color);
+    }
+}
+.form [type="submit"]:focus,
+.form [type="reset"]:focus
+{
+    color: #fff;
+    background-color: var(--blue-color);
+}
+
+.form [type="submit"] svg,
+.form [type="reset"] svg
+{
+    display: block;
+
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+
+    margin-right: 10px;
+}
+
+.form [type="submit"] svg path
+{
+    fill: var(--blue-color);
+    transition: .4s;
+}
+.form [type="reset"] svg path
+{
+    stroke: var(--blue-color);
+    transition: .4s;
+}
+
+.form [type="submit"]:hover svg path
+{
+    fill: #fff;
+}
+.form [type="reset"]:hover svg path
+{
+    stroke: #fff;
 }
 
 

@@ -75,11 +75,31 @@
     color: var(--dark-blue-color);
 
     text-decoration: none;
+
+    border-bottom: 1px solid transparent;
+
+    transition: .4s;
 }
 
 .header__nav ul li.active a
 {
     color: var(--blue-color);
+}
+@media screen and (hover: hover)
+{
+    .header__nav ul li:hover a
+    {
+        color: var(--blue-color);
+    }
+}
+.header__nav ul li:focus a
+{
+    color: var(--blue-color);
+}
+
+.header__nav ul li a:active
+{
+    border-bottom: 1px solid var(--blue-color);
 }
 
 .header__social-links

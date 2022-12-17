@@ -1,5 +1,19 @@
-.form__reg-page .form__label-input input,
-.form__reg-page .form__label-input textarea
+main
+{
+    padding-bottom: 60px;
+}
+
+.form__label-input
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form__label-input input,
+.form__label-input textarea,
+.form__label-input select
 {
     background-color: transparent;
     border: 1px solid var(--dark-blue-color);
@@ -10,4 +24,25 @@
 .form__reg-page .form__label-input textarea::placeholder
 {
     color: #c9c9c9;
+}
+
+.form-buttons
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 3.5rem;
+}
+
+.form-buttons [type="submit"],
+.form-buttons [type="reset"]
+{
+    width: max-content;
+    max-width: max-content;
+
+    margin-top: 0;
 }

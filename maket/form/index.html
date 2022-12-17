@@ -28,8 +28,8 @@
             <nav class="header__nav">
                 <ul>
                     <li><a href="/maket/">Home</a></li>
-                    <li class="active"><a href="/maket/">Services</a></li>
-                    <li><a href="/maket/">Contacts</a></li>
+                    <li><a href="/maket/">Services</a></li>
+                    <li class="active"><a href="/maket/form/">Auth</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,19 +69,21 @@
             <fieldset class="personal-info">
                 <legend>Личная информация</legend>
 
-                <label class="form__label-input no-label">
-                    <span>Name</span>
+                <label class="form__label-input">
+                    <span>Имя</span>
 
                     <input type="text"
                            name="name"
                            placeholder="Имя"
-                           autocomplete="name">
+                           autocomplete="name"
+                            required>
                 </label>
 
                 <label class="form__label-input">
                     <span>Дата рождения</span>
                     <input type="date"
-                           name="bdate">
+                           name="bdate"
+                            required>
                 </label>
 
                 <label class="form__label-input">
@@ -94,52 +96,96 @@
                     </select>
                 </label>
 
-                <label class="form__label-input no-label">
+                <label class="form__label-input">
                     <span>Email</span>
 
                     <input type="email"
                            placeholder="Email"
-                           name="user_email">
+                           name="user_email"
+                            required>
                 </label>
 
-                <label class="form__label-input no-label">
+                <label class="form__label-input">
                     <span>Password</span>
-                    <input type="password" placeholder="Password"
-                           name=""
-                           id="">
+                    <input type="password"
+                           placeholder="Password"
+                           name="user_pass"
+                            required>
                 </label>
             </fieldset>
 
             <fieldset class="contact-info">
                 <legend>Контакты</legend>
 
-                <label class="form__label-input no-label">
-                    <span>Phone</span>
+                <label class="form__label-input">
+                    <span>Телефон</span>
 
                     <input type="tel"
                            inputmode="tel"
                            name="phone"
                            placeholder="Phone Number"
                            autocomplete="tel"
-                           id="phone-input">
+                           id="phone-input"
+                            required>
                 </label>
 
-                <label class="form__label-input no-label">
-                    <span>Уддоюное вре</span>
-                    <input type="password" placeholder="Password"
-                           name=""
-                           id="">
-                </label>
+                <div class="form__label-input">
+                    <span>Удобное время для связи</span>
+                    
+                    <ul class="form__label-list">
+                        <li class="form__label-list-item">
+                            <label class="form__label-input">
+                                <input type="radio" name="call-time[]">
+                                <span>Утро</span>
+                            </label>
+                        </li>
+                        <li class="form__label-list-item">
+                            <label class="form__label-input">
+                                <input type="radio" name="call-time[]">
+                                <span>День</span>
+                            </label>
+                        </li>
+                        <li class="form__label-list-item">
+                            <label class="form__label-input">
+                                <input type="radio" name="call-time[]">
+                                <span>Вечер</span>
+                            </label>
+                        </li>
+                        <li class="form__label-list-item">
+                            <label class="form__label-input">
+                                <input type="radio" name="call-time[]">
+                                <span>Ночь</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </fieldset>
 
-            <input type="submit"
-                   value="Send a message"
-                   class="form-input__submit"
-                   disabled>
+            <div class="form-buttons">
+                <button type="submit" class="form-input__submit">
+                    <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M145 257.333L56.9997 169.333C55.6663 168 54.7197 166.555 54.1597 165C53.6086 163.444 53.333 161.778 53.333 160C53.333 158.222 53.6086 156.555 54.1597 155C54.7197 153.444 55.6663 152 56.9997 150.666L145 62.6665C147.444 60.222 150.497 58.942 154.16 58.8265C157.831 58.7198 161 59.9998 163.666 62.6665C166.333 65.1109 167.724 68.1642 167.84 71.8265C167.946 75.4976 166.666 78.6665 164 81.3331L98.6663 146.666H247.666C251.444 146.666 254.613 147.942 257.173 150.493C259.724 153.053 261 156.222 261 160C261 163.778 259.724 166.942 257.173 169.493C254.613 172.053 251.444 173.333 247.666 173.333H98.6663L164 238.666C166.444 241.111 167.724 244.222 167.84 248C167.946 251.778 166.666 254.889 164 257.333C161.555 260 158.444 261.333 154.666 261.333C150.889 261.333 147.666 260 145 257.333V257.333Z" fill="black"/>
+                    </svg>
+
+                    <span>
+                        Отправить форму
+                    </span>
+                </button>
+
+                <button type="reset">
+                    <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M220.952 53.3333C257.737 74.3162 281.904 114.621 281.904 160C281.904 184.11 274.755 207.68 261.36 227.727C247.965 247.774 228.926 263.399 206.65 272.625C184.375 281.852 159.864 284.266 136.217 279.562C112.57 274.859 90.8485 263.248 73.7999 246.2C56.7512 229.151 45.1409 207.43 40.4371 183.782C35.7334 160.135 38.1475 135.624 47.3742 113.349C56.6009 91.0739 72.2257 72.0349 92.2729 58.6399C112.32 45.2448 135.889 38.0952 160 38.0952" stroke="black" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M220.952 114.286V53.3335H281.905" stroke="black" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <span>
+                        Очистить поля
+                    </span>
+                </button>
+            </div>
         </form>
     </div>
 </main>
-
 
 <footer class="footer">
     <div class="container-1110">
