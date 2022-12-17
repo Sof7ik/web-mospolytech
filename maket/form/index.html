@@ -83,12 +83,13 @@
                     <span>Дата рождения</span>
                     <input type="date"
                            name="bdate"
-                            required>
+                            required
+                            autocomplete="bday">
                 </label>
 
                 <label class="form__label-input">
                     <span>Пол</span>
-                    <select name="user_gender">
+                    <select name="user_gender" autocomplete="sex">
                         <option value="" selected>Выберите...</option>
                         <option value="male">Мужской</option>
                         <option value="female">Женский</option>
@@ -102,12 +103,14 @@
                     <input type="email"
                            placeholder="Email"
                            name="user_email"
+                           autocomplete="email"
                             required>
                 </label>
 
                 <label class="form__label-input">
                     <span>Password</span>
                     <input type="password"
+                           autocomplete="new-password"
                            placeholder="Password"
                            name="user_pass"
                             required>
