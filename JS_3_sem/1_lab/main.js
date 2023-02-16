@@ -128,7 +128,7 @@ function guessNumber() {
 }
 
 function dividing() {
-    let n = prompt("Введите число, которое БУДЕМ делить...");
+    let n = prompt("Введите число, КОТОРОЕ будем делить...");
     if (n === null) return;
 
     let x = prompt("Введите первое число, НА КОТОРОЕ будем делить...");
