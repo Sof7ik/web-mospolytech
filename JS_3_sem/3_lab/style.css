@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+img {
+    display: block;
+    user-select: none;
+}
+
+button {
+    background-color: transparent;
+    display: block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.page-header {
+    background-color: #ccc;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+.register-btn {
+    padding: 15px 35px;
+    border: 1px solid blue;
+    background-color: lightblue;
+    color: #000;
+    border-radius: 4px;
+
+    transition: background-color .3s;
+}
+@media screen and (hover: hover) {
+    .register-btn:hover {
+        background-color: lightskyblue;
+    }
+}
+
+.modal-window {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    pointer-events: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity .4s;
+}
+
+.modal-window.showed {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 5px;
+
+    padding: 30px;
+
+    width: 100%;
+    max-width: 450px;
+
+    height: max-content;
+    max-height: 80vh;
+}
+
+.modal__title {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.label-input-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+
+    margin-bottom: 15px;
+}
+
+form .label-input-wrapper:last-of-type {
+    margin-bottom: 0;
+}
+
+.label-input-wrapper label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.label-input-wrapper input {
+    display: block;
+    padding: 10px 10px 10px 15px;
+}
+
+.error-message {
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    min-height: 2rem;
+
+    color: red;
+}
+
+.form-buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+[type="submit"] {
+    padding: 10px 25px;
+    border: 1px solid lightgreen;
+    background-color: lightgreen;
+
+    color: #000;
+    border-radius: 4px;
+
+    transition: color .3s, background-color .3s, border .3s;
+}
+@media screen and (hover: hover) {
+    [type="submit"]:hover {
+        background-color: green;
+        border: 1px solid green;
+
+        color: #fff;
+    }
+}

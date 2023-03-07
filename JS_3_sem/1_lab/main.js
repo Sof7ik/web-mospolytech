@@ -151,7 +151,6 @@ function dividing() {
 }
 
 function getQuarterByMonth() {
-    let allMonth = 12;
     let monthN = prompt("Введите номер месяца по порядку...");
     if (monthN === null) return;
 

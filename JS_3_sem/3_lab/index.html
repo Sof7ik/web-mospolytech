@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Формы и события</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="page-header">
+    <img src="./images/js-logo.svg"
+         alt="JS logo"
+         class="logo">
+    
+    <button data-open-register-modal
+            class="register-btn">Регистрация</button>
+</header>
+
+<div class="modal-window">
+    <div class="modal-content">
+        <p class="modal__title">Регистрация</p>
+
+        <form action="" method="POST" id="register-form">
+            <p class="form-error"></p>
+
+            <div class="label-input-wrapper">
+                <label for="login">Email</label>
+                <input type="email"
+                       id="login"
+                       name="user-login"
+                       required>
+                <p class="error-message"></p>
+            </div>
+
+            <div class="label-input-wrapper">
+                <label for="pass">Пароль</label>
+                <input type="password"
+                       id="pass"
+                       required
+                       minlength="6"
+                       name="user-pass">
+                <p class="error-message"></p>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="send-btn">Отправить</button>
+                <button type="button"
+                        data-show-pass-btn
+                        class="show-btn">Показать пароль</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="./main.js" defer></script>
+</body>
+</html>
