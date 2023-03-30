@@ -125,7 +125,7 @@ triangle.position.set(-4, 0.5, -2);
 triangle.castShadow = true;
 scene.add(triangle);
 
-const light = new THREE.PointLight( "#fff", 1.2, -3);
+const light = new THREE.PointLight( "#fff", 1, 100);
 light.position.set(0, 6, -15);
 light.castShadow = true;
 scene.add( light );
@@ -191,6 +191,10 @@ function onMouseUp(event) {
     x1 = null;
     y1 = null;
 }
+
+canvasWrapper.addEventListener("wheel", (e) => {
+
+})
 
 // canvasWrapper.addEventListener("pointerdown", onMouseDown);
 // canvasWrapper.addEventListener("pointerup", onMouseUp);
