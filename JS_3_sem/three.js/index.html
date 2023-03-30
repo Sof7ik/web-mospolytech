@@ -3,16 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Three.js</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
 <h1>Three.js</h1>
 
-<sctipt>
+<div class="canvas-wrapper" id="canvas-wrapper">
+</div>
 
-</sctipt>
+<form action="" id="color-change">
+    <ul>
+        <li>
+            <label>
+                <input type="radio" name="color[]" value="#fff">
+                белый
+            </label>
+        </li>
 
-<script src="./main.js" defer></script>
+        <li>
+            <label>
+                <input type="radio" name="color[]" value="#ccc">
+                серый
+            </label>
+        </li>
+
+        <li>
+            <label>
+                <input type="radio" name="color[]" value="#000">
+                черный
+            </label>
+        </li>
+
+        <li>
+            <label>
+                <input type="radio" name="color[]" value="#d15fd9">
+                розовый
+            </label>
+        </li>
+
+
+        <li>
+            <label>
+                <input type="radio" name="color[]" value="#d99f5f">
+                оранжевый
+            </label>
+        </li>
+    </ul>
+    <button>Сменить цвет куба</button>
+</form>
+
+<script type="module" src="./main.js" defer></script>
 
 </body>
 </html>
