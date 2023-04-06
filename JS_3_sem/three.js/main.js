@@ -139,6 +139,9 @@ spotLight.shadow.camera.far = 25;
 spotLight.shadow.mapSize.width = 2048;
 spotLight.shadow.mapSize.height = 2048;
 spotLight.shadow.bias = -0.01;
+spotLight.shadow.camera.fov = 30;
+spotLight.angle = Math.PI / 2.5;
+
 spotLight.target.position.set(0, 0, 0);
 scene.add(spotLight)
 
